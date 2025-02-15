@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="text-center text-4xl">Hiiiii Guys, This is our practice 3</h1>
+
+    <section class="flex justify-between mx-auto">
+      <form id="formsInput" class="flex flex-col w-[50%] px-5">
+        <h1 class="text-2xl">Add Task</h1>
+        <br />
+        <label for="taskName">Task Name</label>
+        <input id="taskName" type="text" placeholder="HRD Homework" required />
+        <br />
+        <label for="default-datepicker">Choose Date</label>
+        <!-- date calender -->
+        <div class="relative max-w-sm">
+          <div
+            class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
+          >
+            <svg
+              class="w-4 h-4 text-gray-500 dark:text-gray-400"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+              />
+            </svg>
+          </div>
+          <input
+            datepicker
+            id="default-datepicker"
+            type="text"
+            required
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Select date"
+          />
+        </div>
+        <br />
+        <label for="priority">Priority</label>
+        <select name="" id="priority" required>
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="hight">Hight</option>
+        </select>
+        <br />
+        <button
+          type="submit"
+          class="px-2 py-2 w-40 bg-blue-600 text-white rounded-xl"
+        >
+          Add New Task
+        </button>
+
+        <h1 id="demo"></h1>
+      </form>
+      <div class="flex flex-col w-2/3">
+        <h1 class="text-2xl">Add List</h1>
+        <table>
+          <thead>
+            <th>TASK NAME</th>
+            <th>DUE DATE</th>
+            <th>PRIORITY</th>
+            <th>STATUS</th>
+          </thead>
+          <tbody>
+            <!-- table row 4 -->
+            <tr class="">
+              <!-- table data task name  -->
+              <td id="task-name" class="text-center"></td>
+              <!-- table tada task date  -->
+              <td id="task-date" class="text-center"></td>
+              <!-- table tada priority  -->
+              <td id="prioritys" class="text-center"></td>
+              <!-- table data status  -->
+              <td id="buttonPending" onclick="onClicks()"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

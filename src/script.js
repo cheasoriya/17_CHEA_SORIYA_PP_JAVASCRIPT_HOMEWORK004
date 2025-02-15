@@ -45,13 +45,13 @@ function onClick1(tdElement) {
     tdElement.innerHTML = "Completed";
     tdElement.setAttribute(
       "class",
-      "bg-green-500 text-white mx-4 px-2 py-2 w-30 text-center rounded-lg"
+      "bg-green-500 text-white mx-4 px-2 py-2  text-center rounded-lg"
     );
   } else if (tdElement.innerHTML === "Completed") {
     tdElement.innerHTML = "Pending";
     tdElement.setAttribute(
       "class",
-      "bg-amber-500 text-white mx-4 px-2 py-2 w-30 text-center rounded-lg"
+      "bg-amber-500 text-white mx-4 px-2 py-2  text-center rounded-lg"
     );
   }
   console.log(tdElement);

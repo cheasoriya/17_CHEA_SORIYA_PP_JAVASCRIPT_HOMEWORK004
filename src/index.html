@@ -11,7 +11,9 @@
     />
   </head>
   <body>
-    <h1 class="text-center text-4xl">Hiiiii Guys, This is our practice 3</h1>
+    <h1 class="text-center text-4xl py-8">
+      Hiiiii Guys, This is our practice 3
+    </h1>
 
     <section class="flex justify-between mx-auto">
       <form id="formsInput" class="flex flex-col w-[50%] px-5">
@@ -66,7 +68,7 @@
       </form>
       <div class="flex flex-col w-2/3">
         <h1 class="text-2xl">Add List</h1>
-        <table>
+        <table class="border-separate border-spacing-[25px]">
           <thead>
             <th>TASK NAME</th>
             <th>DUE DATE</th>
@@ -75,7 +77,7 @@
           </thead>
           <tbody>
             <!-- table row 4 -->
-            <tr class="">
+            <tr>
               <!-- table data task name  -->
               <td id="task-name" class="text-center"></td>
               <!-- table tada task date  -->
@@ -83,7 +85,7 @@
               <!-- table tada priority  -->
               <td id="prioritys" class="text-center"></td>
               <!-- table data status  -->
-              <td id="buttonPending" onclick="onClicks()"></td>
+              <td class="p-4" id="buttonPending" onclick="onClicks()"></td>
             </tr>
           </tbody>
         </table>
